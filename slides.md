@@ -14,15 +14,15 @@ h1 {
 }
 </style>
 
-# What is a container?
-- Process isolation?
-- Processess sharing rescourse?
-- bundling dependancies?
-- ...
+# Containers use-cases.
+- Isolating Services
+- Sharing Resources
+- Bundling Dependencies
+- ... and more.
 
 ---
 # Namespaces
-What a process can see.
+Isolate what a process can see.
 - pid
 - mnt
 - net
@@ -31,10 +31,11 @@ What a process can see.
 - user
 ---
 # Cgroups
-What a process can use.
+Limits what a process can use
 - memory
 - cpu
-- net
+- pid
+- i/o
 - ...
 ---
 ![img](./static/meme.png)

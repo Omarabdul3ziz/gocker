@@ -1,4 +1,0 @@
-## play with namespaces
-```bash
-
-```
