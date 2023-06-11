@@ -1,6 +1,11 @@
 ---
 marp: true
 theme: dark-theme
+style: |
+    img[alt~="center"] {
+      display: block;
+      margin: 0 auto;
+    }
 ---
 
 <style>
@@ -38,4 +43,9 @@ Limits what a process can use
 - i/o
 - ...
 ---
-![img](./static/meme.png)
+This is basically what a container is a process with new set of namespaces and limitation with cgroups.
+
+<br>
+
+
+![w:500 center](./static/meme.png)
