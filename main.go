@@ -61,10 +61,10 @@ func child(commands ...string) error {
 		return errors.Wrap(err, "couldn't limit memory")
 	}
 
-	// err = limit_pids(10)
-	// if err != nil {
-	// 	return errors.Wrap(err, "couldn't limit pids")
-	// }
+	err = limit_pids(20)
+	if err != nil {
+		return errors.Wrap(err, "couldn't limit pids")
+	}
 
 	cmd := exec.Command(commands[0], commands[1:]...)
 	cmd.Stdin = os.Stdin
@@ -76,7 +76,7 @@ func child(commands ...string) error {
 		return errors.Wrap(err, "couldn't set hostname")
 	}
 
-	err = syscall.Chroot("/home/o/gocker_rootfs")
+	err = syscall.Chroot("/home/o/images/ubuntu")
 	if err != nil {
 		return errors.Wrap(err, "couldn't change root")
 	}
