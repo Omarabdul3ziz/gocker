@@ -1,0 +1,8 @@
+- kernel features to build container manager
+- what docker is doing
+- what it uses (namespace, cgroups, ..)
+- illusion that the process runs alone
+- process ids and children 
+- the namespaces (unshare example)
+- the cgroups (directories)
+- gocker and testing 

@@ -76,7 +76,7 @@ func child(commands ...string) error {
 		return errors.Wrap(err, "couldn't set hostname")
 	}
 
-	err = syscall.Chroot("/home/o/images/ubuntu")
+	err = syscall.Chroot("/home/omar/images/layer")
 	if err != nil {
 		return errors.Wrap(err, "couldn't change root")
 	}
